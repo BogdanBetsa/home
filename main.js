@@ -1,46 +1,72 @@
-/* Задание №1 */
+//var str = new String("Hello world");
+//console.log(str);
+//
+//var str = new Array(3, 5, 40, 6);
+//console.log(str);
+//
+//var str = new Array(3);
+//console.log(str);
+//
+//var str = new Function("st1", "st2", "console.log(st1*st2)");
+//console.log(str(35, 45));
 
-function isPalindrome(str) {
-    var strLen = str.length,
-        strReverse = str.split('').reverse().join('');
-    if (strReverse == str) {
-        return 'Палиндром';
-    } else {
-        return 'Не палиндром';
+//function Car(){
+//   console.log("go");
+//}
+//var car = new Car();
+//console.log(car);
+
+//function Car(e, c, b){
+//   this.engine = e;
+//    this.color = c;
+//    this.brand = b;
+//    this.model = "A7";
+//}
+//var car = new Car("White", "V8", "Audi");
+//console.log(car);
+//var car2 = new Car("black", "V12", "BMW");
+//console.log(car2);
+
+function Car(c, e,){
+   this.engine = e;
+    this.color = c;
+    this.brand = "Audi";
+    this.model = "A7";
+    this.go = function(speed){
+        console.log("go " + speed +" "+this.engine);
     }
-}
-
-test = isPalindrome('123321');
-
-console.log(test);
-
-/* Задание №2 */
-
-var car = {
-    size: {
-        spec: "Характериститки",
-        metric: "Eдиница измерения - mm",
-        length: "Длина 4886",
-        width: "Ширина 1938",
-        height: "Высота 1762",
-        weight: "Вес 2100",
-
-    },
-    general:{
-        gen: "Описание",
-        brand: "Марка BMW",
-        model: "Модель X5",
-        color: "Цвет black",
-    },
-
 };
-console.log(car.general.gen);
-console.log(car.general.brand);
-console.log(car.general.model);
-console.log(car.general.color);
-console.log(car.size.spec);
-console.log(car.size.metric);
-console.log(car.size.length);
-console.log(car.size.width);
-console.log(car.size.height);
-console.log(car.size.weight);
+var car = new Car("white", "V8");
+car.go(180);
+
+
+var t = prompt();
+var w = prompt();
+function searchStr(text, word){
+    
+}
+searchStr(t, w);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
