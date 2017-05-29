@@ -1,23 +1,33 @@
 Element.prototype.append = function (el) {
     var newEl = document.createElement(el);
     this.appendChild(newEl);
+    return newEl;
 }
 
 Element.prototype.appendText = function (el) {
     var newEl = document.createTextNode(el);
     this.appendChild(newEl);
 }
+
 Element.prototype.remove = function () {
     this.parentElement.removeChild(this);
 }
+
 var btn = document.getElementById('btn');
 btn.onclick = function () {
     var prod = document.getElementById('newproduct').value;
-var list = document.getElementById('list');
-list.append('li');
+    var list = document.getElementById('list');
+    var newp = list.append('li');
+    var ch = newp.append('input');
+    ch.setAttribute('type', 'checkbox');
+    var s = newp.append('span');
+    s.appendText(prod);
+    var r = newp.append('span');
+    r.appendText(' x');
+    r.onclick = function(){
+        this.parentElement.remove();
+    }
 }
-
-
 
 
 
