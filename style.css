@@ -1,13 +1,5 @@
-/*
-.sector {
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    display: inline-block;
+#ex{
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
 }
-
-.container {
-    text-align: center;
-    margin-top: 12%;
-}*/
